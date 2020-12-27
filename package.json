@@ -1,11 +1,31 @@
 {
-  "name": "palindrome",
+  "name": "@rakshithaevangeline/rakshitha-palindrome",
   "version": "0.1.0",
-  "description": "",
+  "description": "Contains a palindrome module",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "rakshitha",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakshithaevangeline/rakshitha-palindrome.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "palindrome",
+    "Javascript",
+    "Learn",
+    "Enough"
+  ],
+  "bugs": {
+    "url": "https://github.com/rakshithaevangeline/rakshitha-palindrome/issues"
+  },
+  "homepage": "https://github.com/rakshithaevangeline/rakshitha-palindrome#readme"
 }
