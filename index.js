@@ -12,18 +12,25 @@ function Phrase(content) {
 
   // Returns only the letters from a phrase that contains punctuation
   this.letters = function letters() {
-    return lettersArray = Array.from(this.content).filter(character => character.match(/[a-zA-Z]/)).join(""); 
-  }; 
+    // return  Array.from(this.content).filter(character => character.match(/[a-zA-Z]/)).join("");
+
+    // Refactor with just match()
+    if (this.content.match(/[a-z]/ig)) {
+      return this.content.match(/[a-z]/ig).join("");
+    } else {
+      return [].join("");
+    }
+  };
 
   // Returns content processed for palindrome testing.
   this.processedContent = function processedContent() {
     return this.letters().toLowerCase();
    }
 
-  // Returns true if the phrase is a palindrome, false otherwise.
+  // Returns true if the phrase is a palindrome , false otherwise.
   this.palindrome = function palindrome() {
-    return this.processedContent() === this.processedContent().reverse();
-  }
+   return this.processedContent() === this.processedContent().reverse();
+  };
 
   
 }
