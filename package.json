@@ -1,5 +1,5 @@
 {
-  "name": "@rakshithaevangeline/rakshitha-palindrome",
+  "name": "rakshithaevangeline-palindrome",
   "version": "0.1.0",
   "description": "Contains a palindrome module",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rakshithaevangeline/rakshitha-palindrome.git"
+    "url": "https://github.com/rakshithaevangeline/rakshitha-palindrome"
   },
   "publishConfig": {
     "access": "public"

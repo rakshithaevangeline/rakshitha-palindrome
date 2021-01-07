@@ -1,12 +1,11 @@
 let assert = require("assert");
-const { errorMonitor } = require("stream");
 let Phrase = require("../index");
 
 describe("Phrase", () => {
   describe("#letters", () => {
     it("should return true if the letters from a phrase are returned", () => {
       let phrase = new Phrase("Madam, I'm Adam.");
-      assert.strictEqual(phrase.letters(), "MadamImAdam");
+      assert.strictEqual(phrase.letters(), "MadamImAdam");  
     });
 
     it("should return empty string on no match", () => {
@@ -34,6 +33,11 @@ describe("Phrase", () => {
     it("should return true for a palindrome with punctuation", () => {
       let punctuatedPalindrome = new Phrase("Madam, I'm Adam.");
       assert(punctuatedPalindrome.palindrome());
+    });
+
+    it("should return false for an empty string", () => {
+      let emptyPhrase = new Phrase("");
+      assert(!emptyPhrase.palindrome());
     });
   });
 });
